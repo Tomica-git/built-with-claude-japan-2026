@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>気分テンポ日記</title>
+    <meta name="theme-color" content="#f3ecdf" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='4' fill='%23d36b3a'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <span class="sun" aria-hidden="true"></span>
+        <div>
+          <h1 class="wordmark">気分テンポ日記</h1>
+          <p class="tag" id="today-label">今朝</p>
+        </div>
+      </div>
+      <nav aria-label="画面">
+        <button type="button" data-view="today">今朝</button>
+        <button type="button" data-view="log">記録</button>
+        <button type="button" data-view="manual">説明書</button>
+      </nav>
+    </header>
+    <p id="key-banner" class="banner" hidden></p>
+    <main id="main"></main>
+    <footer>
+      <p>これは医療やカウンセリングの助言ではありません。自分の言葉を整理するための日記です。</p>
+      <p>
+        一人で抱えたくないときは、よりそいホットライン
+        <a href="tel:0120-279-338">0120-279-338</a>
+        （24時間・無料）。福島県からは
+        <a href="tel:0120-279-226">0120-279-226</a>。
+      </p>
+    </footer>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
